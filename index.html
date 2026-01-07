@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome | Multi-level Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="gradient-bg">
+  <div class="overlay"></div>
+
+  <main class="center-card">
+    <div class="logo-badge">
+      <span class="dot dot-1"></span>
+      <span class="dot dot-2"></span>
+      <span class="dot dot-3"></span>
+    </div>
+
+    <h1 class="title">Welcome NeoDawn ✨</h1>
+    <p class="subtitle">
+      Enter your email .
+    </p>
+
+    <!-- Connect this form action to your n8n webhook / workflow URL -->
+    <form class="email-form" method="POST" action="https://n8n-rowfi-automation.onrender.com/webhook-test/check-breach">
+      <div class="floating-group">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          autocomplete="email"
+          placeholder=" "
+        />
+        <label for="email">Email address</label>
+        <span class="focus-ring"></span>
+      </div>
+
+      <button type="submit" class="primary-btn">
+        <span>Continue</span>
+        <span class="btn-glow"></span>
+      </button>
+
+      <p class="helper-text">
+        We respect your privacy. Let's Find any Data Breach !!
+      </p>
+    </form>
+
+    <div class="pill-row">
+      <span class="pill pill-blue">Privacy</span>
+      <span class="pill pill-pink">Fast</span>
+      <span class="pill pill-green">Personal</span>
+    </div>
+  </main>
+
+  <ul class="floating-bubbles">
+    <li></li><li></li><li></li><li></li><li></li>
+    <li></li><li></li><li></li><li></li><li></li>
+  </ul>
+</body>
+</html>
